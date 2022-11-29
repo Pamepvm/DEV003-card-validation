@@ -10,22 +10,63 @@
     <main></main>
     <footer></footer>
     <script src="index.js" type="module"></script>
+  <style>
+    .atribution{ font-size:11px;text-align: center;}
+    .atribution{ color: navy;}
+  </style>
   </body>
-</html>
+
+  <main class="main-container">
+    <section class="main-container_background-section"></section>
+    <div class="card">
+        <img src="img/fondocard.jpg" alt="maqueta card">
+        <p class="number">0000 0000 0000 0000</p> 
+        <div class="name-surname"> <p>Nombre Apellido</p> 
+        <p> <span class="month">00</span>/ <span class="year">00</span></p>
+        </div>
+    </div>
+
+      <div class="card-back">
+       <p class="card-back-cvc">000</p> 
+      </div>
+ <!-- Primeros recuados para escribir-->
+    <section class="main-container_form-section">
+      <form class="form" action="">
+        <label for="cardholder">Nombre del Titular</label>
+        <input class="form_input" type="text" name="cardholder" id="cardholder" placeholder="ej. Pamela Viveros">
+          <div class="form_input-cardholder-error error"></div>
+        <label for="cardnumber">Número de Tarjeta</label>
+        <input class="form_input" type="text" name="cardnumber" id="cardnumber" maxlength="19" placeholder="ej. 1234 5678 9101 2345">
+          <div class="form_input-number-error error"></div>
+
+ <!-- Recuadro de las fechas y cvc construir una tabla con 6 espacios-->
+  <div class="form-date-cvc">
+    <label for="mes">Vence (MM/YY)</label>
+    <label for="cvc">CVC</label>
+      <div>
+        <input class="form_input" type="text" maxlength="2" name="mes" id="mes" placeholder="MM">
+        <input class="form_input" type="text"maxlength="2" name="año" id="año" placeholder="YY">
+      </div>
+        <input class="form_input" type="text"maxlength="3" name="cvc" id="cvc" placeholder="ej.123">
+        <div class="form_errors-container">
+          <div class="form_input-mm-error error"></div>
+          <div class="form_input-yy-error error"></div>
+        </div>
+        <div class="form_input-cvc-error error"></div>
+  </div>
+ <!-- Botón de confirmar-->
+        <input class="form_sumit" type="submit" value="Confirmar">
+      </form>
+    </section>
+  </main>
 
 
-0000 0000 0000 0000
-Nombre Apellido
-
-Número Tarjeta
-1234 5678 9123 0000
-
-DESDE SINCE (MM/YY)
-
-DESDE THRU (MM/YY)
 
 
-CVC
-123
 
-Confirme
+
+
+
+
+
+  </html>
