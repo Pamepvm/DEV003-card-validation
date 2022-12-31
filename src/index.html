@@ -4,69 +4,110 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+  
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  <style>
-    .atribution{ font-size:11px;text-align: center;}
-    .atribution{ color: navy;}
-  </style>
-  </body>
 
-  <main class="main-container">
-    <section class="main-container_background-section"></section>
+  <main class="main-container"> </main>
+   <h1>Compra en línea</h1>
+    <script src="index.js" type="module"></script>
+      <style>
+        h1{
+        background-color: darkslategray;
+        }
+      </style>
+
     <div class="card">
-        <img src="img/fondocard.jpg" alt="maqueta card">
-        <p class="number">0000 0000 0000 0000</p> 
-        <div class="name-surname"> <p>Nombre Apellido</p> 
-        <p> <span class="month">00</span>/ <span class="year">00</span></p>
+        <img src="img/Tarjetas.jpg" alt="fondo de card">
+    </div> 
+
+
+ <!-- Titular -->
+ <form action="" id="container" class="container">
+  <div class="grupo">
+    <label for="inputNombre">Nombre Titular</label>
+      <input type="text" id="inputNombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre sólo acepta letras y espacios en blanco" autocomplete="off"  required placeholder="ej. Pamela Viveros">
+  </div> 
+
+  <!-- Número de tarjeta   pattern="/^[0]{4}[0-9]{8}[0-9]{4}$/"-->     
+  <div class="grupo">
+    <label for="inputNumero">Número de Tarjeta</label>
+      <input type="text" class="numero-tarjeta" name="cardNumber"  id="cardNumber" required maxlength="16" placeholder="ej. 1234567891012">
+     
+      <br>
+  </div>   
+ 
+  <!-- meses-->
+  <div class="flexbox">
+    <div class="grupo vence">
+      <label for="selectMes">Vencimiento</label>
+      <div class="flexbox">
+        <div class="grupo-select">
+          <select name="mes" id="selectMes">
+            <option value="01">Enero</option>
+          <option value="02">Febrero</option>
+          <option value="03">Marzo</option>
+          <option value="04">Abril</option>
+          <option value="05">Mayo</option>
+          <option value="06">Junio</option>
+          <option value="07">Julio</option>
+          <option value="08">Agosto</option>
+          <option value="09">Septiembre</option>
+          <option value="10">Octubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Dicienbre</option>
+          </select>
+           <!-- <i class="fas fa-angle-down"></i>-->   
         </div>
+        
+    <!-- Año-->      
+        <div class="grupo-select">
+          <select name="year" id="selectYear">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2027">2029</option>
+                <option value="2028">2030</option>
+          </select>
+         <!-- <i class="fas fa-angle-down"></i>-->  
+        </div>
+      </div>
+    </div>
+        <!-- cvv-->
+      <div class="grupo cvv">
+        <label for="inputcvv">CVV</label>
+        <input type="text" maxlength="3" id="inputCvv" required placeholder="ej. 123">
+      </div> 
     </div>
 
-      <div class="card-back">
-       <p class="card-back-cvc">000</p> 
-      </div>
- <!-- Primeros recuados para escribir-->
-    <section class="main-container_form-section">
-      <form class="form" action="">
-        <label for="cardholder">Nombre del Titular</label>
-        <input class="form_input" type="text" name="cardholder" id="cardholder" placeholder="ej. Pamela Viveros">
-          <div class="form_input-cardholder-error error"></div>
-        <label for="cardnumber">Número de Tarjeta</label>
-        <input class="form_input" type="text" name="cardnumber" id="cardnumber" maxlength="19" placeholder="ej. 1234 5678 9101 2345">
-          <div class="form_input-number-error error"></div>
-
- <!-- Recuadro de las fechas y cvc construir una tabla con 6 espacios-->
-  <div class="form-date-cvc">
-    <label for="mes">Vence (MM/YY)</label>
-    <label for="cvc">CVC</label>
-      <div>
-        <input class="form_input" type="text" maxlength="2" name="mes" id="mes" placeholder="MM">
-        <input class="form_input" type="text"maxlength="2" name="año" id="año" placeholder="YY">
-      </div>
-        <input class="form_input" type="text"maxlength="3" name="cvc" id="cvc" placeholder="ej.123">
-        <div class="form_errors-container">
-          <div class="form_input-mm-error error"></div>
-          <div class="form_input-yy-error error"></div>
-        </div>
-        <div class="form_input-cvc-error error"></div>
-  </div>
+    <!--<div id="mask">resultado</div> -->
+   
  <!-- Botón de confirmar-->
-        <input class="form_sumit" type="submit" value="Confirmar">
-      </form>
-    </section>
-  </main>
+    <button type="submit" id="botonconfirmar" value="Confirmar"  class="btn-confirmar">Confirmar</button>
+ </form>
+</div>
+
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="./index.js" type="module"></script>
+<script> type = "text/javascrip"</script>
+
+ 
+</body>
+</html>   
 
 
 
 
 
+<script>	
 
 
 
 
 
-  </html>
+</script>

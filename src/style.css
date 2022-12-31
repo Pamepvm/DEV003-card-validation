@@ -1,14 +1,118 @@
-body {
-  font-size: 18px ;
+h1 {
+  text-align:left;
   font-family: Arial, Helvetica, sans-serif;
-  background-image:;
+  font-size: small;
+  color: white;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 10px;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.main-container{
-  width: 375px;
-  margin: auto;
+.card {
+  display: flex;
+  justify-content:center;
 }
 
+.container {
+ 
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+max-width: 550px;
+padding: 80px;
+min-height: 100px 30px 30px 30px;
+border-radius: 10px;
+position: relative;
+top: -60px;
+z-index: 1;
+}
+
+.container label {
+  display: block;
+  color: darkgreen;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.container input,
+.container select,
+.btn-confirmar {
+  border: 2px solid darkgrey;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  padding: 5px 12px;
+  transition: .3s ease all;
+  border-radius: 5px;
+}
+
+.container input:hover,
+.container select:hover {
+  border: 2px solid darkslategray;
+}
+
+.container input:focus,
+.container select:focus {
+  outline: black;
+  box-shadow: 1px 7px 10px -5px grey;
+}
+
+.container input {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.container .flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .vence {
+  width: 100%;
+}
+
+.container .cvv {
+  min-width: 10%;
+}
+
+.container .grupo-select {
+  width: 100%;
+  margin-right: 15px;
+  position: relative;
+}
+
+.container .grupo-select i {
+  position: absolute;
+  color: grey;
+  top: 17px;
+  right: 7px;
+  transition: .3s ease all;
+}
+
+.container .grupo-select:hover i {
+  color: grey;
+}
+
+.container .btn-confirmar {
+  border: none;
+  padding: 10px;
+  font-size: 22px;
+  color: white;
+  background: darkgreen;
+  box-shadow: 2px 2px 10px 0px gray;
+  cursor: pointer;
+}
+
+.container .btn-confirmar:hover {
+  background: darkgreen;
+}
