@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  
+  </head>
+  <body>
+
+  <main class="main-container"> </main>
+   <h1>Compra en línea</h1>
+    <script src="index.js" type="module"></script>
+      <style>
+        h1{
+        background-color: darkslategray;
+        }
+      </style>
+
+    <div class="card">
+        <img src="img/Tarjetas.jpg" alt="fondo de card">
+    </div> 
+
+
+ <!-- Titular -->
+ <form action="" id="container" class="container">
+  <div class="grupo">
+    <label for="inputNombre">Nombre Titular</label>
+      <input type="text" id="inputNombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre sólo acepta letras y espacios en blanco" autocomplete="off"  required placeholder="ej. Pamela Viveros">
+  </div> 
+
+  <!-- Número de tarjeta   pattern="/^[0]{4}[0-9]{8}[0-9]{4}$/"-->     
+  <div class="grupo">
+    <label for="inputNumero">Número de Tarjeta</label>
+      <input type="text" class="numero-tarjeta" name="cardNumber"  id="cardNumber" required maxlength="16" placeholder="ej. 1234567891012" pattern="[0-9]+">
+     
+      <br>
+  </div>   
+ 
+  <!-- meses-->
+  <div class="flexbox">
+    <div class="grupo vence">
+      <label for="selectMes">Vencimiento</label>
+      <div class="flexbox">
+        <div class="grupo-select">
+          <select name="mes" id="selectMes">
+            <option value="01">Enero</option>
+          <option value="02">Febrero</option>
+          <option value="03">Marzo</option>
+          <option value="04">Abril</option>
+          <option value="05">Mayo</option>
+          <option value="06">Junio</option>
+          <option value="07">Julio</option>
+          <option value="08">Agosto</option>
+          <option value="09">Septiembre</option>
+          <option value="10">Octubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Dicienbre</option>
+          </select>
+           <!-- <i class="fas fa-angle-down"></i>-->   
+        </div>
+        
+    <!-- Año-->      
+        <div class="grupo-select">
+          <select name="year" id="selectYear">
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2027">2029</option>
+                <option value="2028">2030</option>
+          </select>
+         <!-- <i class="fas fa-angle-down"></i>-->  
+        </div>
+      </div>
+    </div>
+        <!-- cvv-->
+      <div class="grupo cvv">
+        <label for="inputcvv">CVV</label>
+        <input type="text" maxlength="3" id="inputCvv" required placeholder="ej. 123">
+      </div> 
+      </div>
+
+    <!--<div id="mask">resultado</div> -->
+   
+ <!-- Botón de confirmar-->
+    <button type="submit" id="botonconfirmar" value="Confirmar"  class="btn-confirmar">Confirmar</button>
+ </form>
+  
+
+
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+<script src="./index.js" type="module"></script>
+<script> type = "text/javascrip"</script>
+
+ 
+</body>
+</html>   
+
+
+
+
+
+<script>	
+
+
+
+
+
+</script>
